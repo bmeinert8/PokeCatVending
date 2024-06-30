@@ -65,7 +65,7 @@ a {
     
 }
 
-.title:hover {
+.name:hover {
     cursor: pointer;
     color:black;
     text-decoration: 9none;
@@ -157,3 +157,103 @@ a {
     transform: none;
 }
 
+/* Sections */
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+  }
+  
+  .section-container {
+    display: flex;
+  }
+  
+  /* PROFILE SECTION */
+  
+  #profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+  }
+  
+  .section__pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+  }
+  
+  .section__text {
+    align-self: center;
+    text-align: center;
+  }
+  
+  .section__text p {
+    font-weight: 600;
+  }
+  
+  .section__text__p1 {
+    text-align: center;
+  }
+  
+  .section__text__p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .title {
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  #socials-container {
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+
+.profile-picture {
+    border-radius: 50%;
+}
+
+/* ICON */
+
+.icon{
+    cursor: pointer;
+    height: 3rem;
+}
+
+.icon:hover {
+    transform: scale(1.3);
+    transition: all 300ms ease-in-out;
+}
+
+.icon:active {
+    transform: scale(1.1);
+}
+
+/* Button */
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    border-color: rgb(53,53,53) 0.1rem solid;
+    cursor: pointer;
+    background-color: white;
+}
+
+.btn:hover {
+    background-color: rgb(53,53,53);
+    color: white;
+    box-shadow: 1px 1px 5px .3px rgb(53,53,53);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
