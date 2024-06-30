@@ -1,7 +1,64 @@
-body{
-    background-color: aquamarine;
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
 }
 
-h1{
-    color #000;
+body {
+    font-family: "Arimo", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(85, 85, 85);
+}
+
+/* Transition */
+
+a, .btn {
+    transition: all 300ms ease;
+}
+
+/* Desktop Navigation Bar */
+
+nav, .nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a {
+    color: black;
+    text-decoration-color: white
+    
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181,181,181);
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Bowlby One", sans-serif; ;
+}
+
+.logo:hover {
+    cursor: default;
 }
