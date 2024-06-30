@@ -354,3 +354,14 @@ section {
 .email-icon:hover {
     transform: none;
 }
+
+/* Footer */
+
+footer{
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p {
+    text-align: center;
+}
