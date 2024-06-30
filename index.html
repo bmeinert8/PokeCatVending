@@ -15,7 +15,7 @@
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo"><img class="title-logo" src="./assests/favicon-32x32.png" alt=""><a class="title" href="#Home">PokéCat Vending</a></div>
+        <div class="logo"><img class="title-logo" src="./assests/favicon-32x32.png" alt=""><a class="name" href="#Home">PokéCat Vending</a></div>
         <div>
             <ul class="nav-links">
                 <li><a class="desktop" href="#company">Company Info</a></li>
@@ -38,6 +38,24 @@
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img class="profile-picture" src="./assests/logo.jpeg" alt="pokecat vending picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, We're</p>
+            <h1 class="title">PokéCat Vending</h1>
+            <p class="section__text__p2">a vending machine company</p>
+            <div vlass="btn-container">
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+            <img src="./assests/instagram.png" alt="instagram page" class="icon" onclick="location.href='https://www.instagram.com/pokecatvending/'">
+            </div>
+        </div>
+    </section>
     <script src="script.js"></script>
+
 </body>
 </html>
