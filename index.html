@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,18 +6,36 @@
     <title>PokeCat Vending</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Bowlby+One&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo">PokeCat Vending</div>
+        <div class="logo"><a class="title" href="#Home">PokéCat Vending</a></div>
         <div>
             <ul class="nav-links">
-                <li><a href="#company">Company Info</a></li>
-                <li><a href="#owner">About The Owner</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a class="desktop" href="#company">Company Info</a></li>
+                <li><a class="desktop" href="#owner">About The Owner</a></li>
+                <li><a class="desktop" href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
+    <nav id="mobile-nav">
+        <div class="logo"><a class="title" href="#">PokéCat Vending</a></div>
+        <div class="hamburger-nav">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#company" onclick="toggleMenu()">Company Info</a></li>
+                <li><a href="#owner" onclick="toggleMenu()">About The Owner</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
     <script src="script.js"></script>
 </body>
 </html>
