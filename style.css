@@ -71,6 +71,9 @@ a {
     text-decoration: 9none;
 }
 
+.title-logo{
+    padding-right: 2px;
+}
 /* Mobile Navigation Bar */
 #mobile-nav {
     display: none;
