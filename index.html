@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PokeCat Vending</title>
-    <link rel="stylesheet" href="style.css">
+    <link id="style-light" rel="stylesheet" href="style.css">
+    <link id="style-dark" disabled rel="stylesheet" href="style-dark.css">
     <link rel="stylesheet" href="mediaqueries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Bowlby+One&display=swap" rel="stylesheet">
-<link rel="icon" href="./assests/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Bowlby+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assests/favicon.ico">
+    <script src="theme.js"></script>
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo"><img class="title-logo" src="./assests/favicon-32x32.png" alt=""><a class="name" href="#Home">PokéCat Vending</a></div>
+        <div class="logo"><img class="title-logo" src="./assests/favicon-32x32.png" alt=""><a class="name" href="#Home">PokéCat Vending</a>
+        </div>
+        <div class="contrast"><a href="#" onclick="theme_toggle(); return false;">&#127763;</a>
+        </div>
         <div>
             <ul class="nav-links">
                 <li><a class="desktop" href="#company">Company Info</a></li>
@@ -23,6 +28,8 @@
     </nav>
     <nav id="mobile-nav">
         <div class="logo"><img class="title-logo" src="./assests/favicon-32x32.png" alt="">PokéCat Vending</div>
+        <div class="contrast"><a href="#" onclick="theme_toggle(); return false;">&#127763;</a>
+        </div>
         <div class="hamburger-nav">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -63,11 +70,11 @@
                     <div class="details-container">
                         <img src="./assests/location_on_20dp_FILL0_wght400_GRAD0_opsz20.png" alt="location icon">
                         <h3>Location</h3>
-                        <p>19110 Lorain Rd. <br> Fairview Park, OH 44126</p>
+                        <p class="darkmode_text">19110 Lorain Rd. <br> Fairview Park, OH 44126</p>
                     </div>
                     <div class="details-container">
                         <img src="./assests/map_20dp_FILL0_wght400_GRAD0_opsz20.png" alt="a map icon">
-                        <h3><a href="https://www.google.com/maps/place/19110+Lorain+Rd,+Fairview+Park,+OH+44126/@41.4535195,-81.8343235,17z/data=!3m1!4b1!4m6!3m5!1s0x8830ed725c199bb3:0x2c23fe115f46e93b!8m2!3d41.4535195!4d-81.8317486!16s%2Fg%2F11bw4dfhmv?entry=ttu"class="desktop">Directions</a></h3>
+                        <h3><a href="https://www.google.com/maps/place/19110+Lorain+Rd,+Fairview+Park,+OH+44126/@41.4535195,-81.8343235,17z/data=!3m1!4b1!4m6!3m5!1s0x8830ed725c199bb3:0x2c23fe115f46e93b!8m2!3d41.4535195!4d-81.8317486!16s%2Fg%2F11bw4dfhmv?entry=ttu"class="desktop darkmode_text">Directions</a></h3>
                     </div>                     
                 </div>
                 <div class="text-container">
@@ -87,11 +94,11 @@
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
                 <img src="./assests/email.png" alt="email icon" class="icon contact-icon email-icon">
-                <p><a href="mailto:josh@pokecatvending.com" class="desktop">josh@pokecatvending.com</a></p>
+                <p><a href="mailto:josh@pokecatvending.com" class="desktop darkmode_text">josh@pokecatvending.com</a></p>
             </div>
             <div class="contact-info-container">
                 <img src="./assests/instagram.png" alt="instagram icon" class="icon contact-icon insta-icon">
-                <p><a href="https://www.instagram.com/pokecatvending/" class="desktop">Instagram</a></p>
+                <p><a href="https://www.instagram.com/pokecatvending/" class="desktop darkmode_text">Instagram</a></p>
             </div>
         </div>
     </section>
@@ -107,6 +114,5 @@
         <p>Copyright &#169; 2024 BJM Design Solutions.  All Rights Reserved. </p>
     </footer>
     <script src="script.js"></script>
-
 </body>
 </html>
